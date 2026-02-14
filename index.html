@@ -144,9 +144,74 @@
             .hero {
                 grid-template-columns: 1fr;
             }
+            /* NAVBAR */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e4d7a;
+    font-weight: 600;
+}
+
+/* HAMBURGER BUTTON (HIDDEN DI DESKTOP) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        padding: 15px 20px;
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: white;
+        width: 200px;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 10px 0 0 10px;
+        display: none;
+    }
+
+    nav a {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #1e4d7a;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+}
+
         }
     </style>
 </head>
+    <script>
+function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script>
+
 <body>
 
     <!-- HEADER -->
@@ -269,3 +334,4 @@
 </body>
 
 </html>
+
