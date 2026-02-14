@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPD Hidayatullah Jakarta Barat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+     body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f4f8ff, #eaf2ff);
+    background-image: url('pattern.jpg');
+    background-size: 300px;
+    background-repeat: repeat;
+}
+
+
+
+
+        /* HEADER */
+        header {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            height: 50px; /* GANTI LOGO DI SINI */
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #0b6b4f;
+            font-weight: 600;
+        }
+
+        /* HERO */
+        .hero {
+    background: linear-gradient(
+        rgba(0, 51, 102, 0.7),
+        rgba(0, 51, 102, 0.7)
+    ),
+    url('hero.jpg') center/cover no-repeat;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+
+        .hero img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        /* SECTION */
+        section {
+            padding: 50px 40px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: #0b6b4f;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        /* BERITA */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        /* PROFIL ACCORDION */
+        .accordion {
+            background: #0b6b4f;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .panel {
+            background: white;
+            padding: 20px;
+            display: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0b1f3a;
+            color: white;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        footer img {
+            height: 60px; /* GANTI LOGO FOOTER */
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <!-- ===== GANTI FILE LOGO DI BAWAH INI ===== -->
+            <img src="LogoHidayatullah.png" alt="Logo DPD">
+            <h2>DPD Hidayatullah Jakarta Barat</h2>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#profil">Profil</a>
+            <a href="#program">Program Kerja</a>
+            <a href="#berita">Berita</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <!-- ===== FOTO UTAMA ORGANISASI (GANTI) ===== -->
+        <img src="images/hero1.jpg" alt="Kegiatan DPD">
+        <!-- ===== FOTO KEGIATAN / MUSWIL / RAKERDA (GANTI) ===== -->
+        <img src="images/hero2.jpg" alt="Kegiatan Organisasi">
+    </section>
+
+    <!-- BERITA TERBARU -->
+    <section id="berita">
+        <h2 class="section-title">Berita Terbaru</h2>
+        <div class="cards">
+            <div class="card">
+                <!-- ===== FOTO BERITA 1 (GANTI) ===== -->
+                <img src="rakerda.jpeg" alt="Berita 1">
+                <div class="card-content">
+                    <h4>Kegiatan Rakerda 2026</h4>
+                    <p>Pelaksanaan Rapat Kerja Daerah DPD Hidayatullah Jakarta Barat 14 Februari 2026.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- ===== FOTO BERITA 2 (GANTI) ===== -->
+                <img src="images/berita2.jpg" alt="Berita 2">
+                <div class="card-content">
+                    <h4>Baksos Bekam</h4>
+                    <p>Kegiatan pelayanan kesehatan untuk masyarakat Jakarta Barat.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- ===== FOTO BERITA 3 (GANTI) ===== -->
+                <img src="images/berita3.jpg" alt="Berita 3">
+                <div class="card-content">
+                    <h4>Beasiswa Anak Dhuafa</h4>
+                    <p>Program sosial pendidikan DPD Hidayatullah Jakarta Barat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL ORGANISASI -->
+    <section id="profil">
+        <h2 class="section-title">Profil Organisasi</h2>
+
+        <div class="accordion">Profil DPD</div>
+        <div class="panel">
+            <!-- ===== ISI PROFIL ORGANISASI DI SINI ===== -->
+            <p>DPD Hidayatullah Jakarta Barat adalah organisasi dakwah yang bergerak di bidang pendidikan, sosial, dan pelayanan umat.</p>
+        </div>
+
+        <div class="accordion">Visi & Misi</div>
+        <div class="panel">
+            <!-- ===== ISI VISI MISI DI SINI ===== -->
+            <p>Visi: Membangun peradaban Islam yang mandiri dan berpengaruh.</p>
+        </div>
+
+        <div class="accordion">Struktur Kepengurusan</div>
+        <div class="panel">
+            <!-- ===== BISA ISI FOTO STRUKTUR / NAMA PENGURUS ===== -->
+            <p>Struktur Kepengurusan DPD Hidayatullah Jakarta Barat Periode 2026 - 2030.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+        <div>
+            <!-- ===== LOGO FOOTER (GANTI) ===== -->
+            <img src="LogoHidayatullah.png" alt="Logo">
+            <p>DPD Hidayatullah Jakarta Barat</p>
+        </div>
+
+        <div>
+            <h3>Alamat</h3>
+            <!-- ===== GANTI ALAMAT SEKRETARIAT ===== -->
+            <p>alamat</p>
+        </div>
+
+        <div>
+            <h3>Kontak</h3>
+            <!-- ===== GANTI KONTAK ===== -->
+            <p>Email: dpdjakbar@email.com</p>
+            <p>WhatsApp: 0812-2940-6677</p>
+        </div>
+    </footer>
+
+    <script>
+        const acc = document.querySelectorAll('.accordion');
+        acc.forEach(item => {
+            item.addEventListener('click', () => {
+                const panel = item.nextElementSibling;
+                panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
